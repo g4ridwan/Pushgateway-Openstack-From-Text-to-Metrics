@@ -1,0 +1,15 @@
+
+## Prometheus config for scape data from pushgateway.
+## we need to drop some metrics,
+- job_name: 'Hypervisor'
+  honor_timestamps: true
+  scrape_interval: 25s
+  scrape_timeout: 15s
+  honor_labels: true
+  static_configs:
+  - targets:
+    - [Your IP] : 9091
+  metric_relabel_configs:
+    - source_labels: [__name__]
+      regex: '(push_time_seconds|push_failure_time_seconds)'
+      action: drop
