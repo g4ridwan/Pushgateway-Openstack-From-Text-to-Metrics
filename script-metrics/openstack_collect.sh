@@ -1,6 +1,6 @@
 #!/bin/bash
 ## Load "stackrc" to Session
-source /root/script-metrics/Your_StackRC
+source /home/ops-metrics/script-metrics/Your_StackRC
 ## Wait for Openstack StackRC to load
 sleep 3
 ## Write Output to File
