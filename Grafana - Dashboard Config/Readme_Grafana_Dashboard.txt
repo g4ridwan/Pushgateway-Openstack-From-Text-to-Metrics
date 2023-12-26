@@ -8,5 +8,5 @@ SUM({Server=~".+", job="Hypervisor"})
 # Check Instance on Spesific Server Hypervisor
 Sum({Server=~"Server01", job="Hypervisor"})
 
-
-# Create visual type Tabel
+# Create visual panel :
+Tabel Visual
