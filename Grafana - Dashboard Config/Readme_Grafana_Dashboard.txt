@@ -1,6 +1,4 @@
-
-## Grafana
-## PromeQL  :
+## Grafana & PromeQL  :
 
 # Check Instance on All Server Hypervisor
 SUM({Server=~".+", job="Hypervisor"})
